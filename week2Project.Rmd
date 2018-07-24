@@ -1,0 +1,17 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+#Interative map
+HUIBEOM KIM  
+July 24, 2018
+
+```{r}
+library(leaflet)
+my_map <- leaflet()
+my_map <- addTiles(my_map)
+popLink <- "<a href='http://www.konkuk.ac.kr'>Konkuk University</a>"
+my_map <- addMarkers(my_map, lat = 37.5407625, lng = 127.07934279999995,
+                     popup = popLink)
+my_map
+```
